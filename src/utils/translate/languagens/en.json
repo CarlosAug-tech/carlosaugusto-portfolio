@@ -1,0 +1,52 @@
+{
+    "translation": {
+        "banner.title": "Developer Full-Stack",
+        "about.title": "About",
+        "portfolio.title": "Portfolio",
+        "qualifications.title": "Qualifications",
+        "contact.title": "Contact",
+        
+        "banner.description": "Venha conhecer meus trabalhos, sou desenvolvedor em React e React Native na parte do Front-end, mas também posso dar aquela mãozinha na parte do Back-end com o Node.",
+        
+        "about.description": "Olá pessoal, me chamo Carlos Augusto, tenho 23 anos, sou formado em Análise e Desenvolvimento em Sistemas pela FATEC - Franca. Atuo nesse universo da programação há 3 anos, amante deste ecosistema incrível do Javascript. Sou desenvolvedor Full-stack, com um a mais em Front-end.",
+        
+        "timeline.2016": "Me formei na Escola CE-SESI de Franca-SP.\n  Conclui o curso de Técnico em Informática no SENAC de Franca-SP.",
+        "timeline.2017": "Entrei na Faculdade de Análise e Desenvolvimento de Sistema na FATEC Franca-SP.",
+        "timeline.2019": "Iniciei meu Estágio na empresa Nexdrones. \n Realizei alguns trabalhos de freelancer.",
+        "timeline.2020": "Iniciei trabalhos autônomos e estudos. \n Me formei na Faculdade de Análise e Desenvolvimento de Sistema.",
+        "timeline.2021": "Começei a trabalhar como Desenvolvedor Front-end pela ERNetwork.",
+        "timeline.2022": "Começei a trabalhar como Desenvolvedor Full-Stack na Pretty-Byte.",
+
+        "carousel.description.auth.notify": "O projeto AuthNotify é uma aplicação para controle de sessões de usuários, podendo cadastrar e autenticar-se, enviando uma notificação automática ao fazer a sessão na primeira vez.",
+        "carousel.description.manager.product": "O projeto ManagerProduct é uma aplicação para controle de produto, no qual o usuário poderá fazer cadastro e autenticar-se na aplicação, assim sendo redirecionado automaticamente ao Dashboard no qual possui as funcionalidades de Cadastro, Edição e Remoção do produto. Além de ter uma área para editar o perfil, podendo adicionar um avatar, trocando nome, senha, email e fazendo logout da aplicação. Este projeto tem objetivo de praticar e estudar.",
+        "carousel.description.video.upload": "O projeto VídeoUpload é uma aplicação para uploads de vídeos, no qual consiste em salvar seus vídeos, comentar nos vídeos disponíveis na aplicação, podendo também fazer a troca de temas entre Dark e Light, com sistema de login e cadastro, possuindo restrição para usuários que possui conta em relação aos que não possuem, como por exemplo, o upload de vídeo e comentar nos vídeos. O sistema tem um método para notificação para usuários novos e para quando o vídeo é comentado, chegará uma notificação para o dono, informando que algum usuário teria comentado em seu vídeo!!",
+        "carousel.description.step.wizard": "Este componente é um facilitador de criação de uma linha de tempo para seus componentes que serão mostrado em telas, ao clicar no que se deseja ser exibido.",
+        "carousel.description.form.validation": "O projeto FormValidation é uma aplicação que controla um formulário, acusando e informando o erro ou sucesso dos formulário com mensagens Toast e Alertas.",
+        "carousel.description.credit.card": "O projeto CreditCard é uma aplicação que foi feita como base para estudo que simula um carrinho de compra de produtos, além de possuir toda etapa de compra até chegar ao Checkout final para finalizar a compra. O sistema também tem a parte de autenticação e criação de contas, podendo diferenciar de contas de administradores para usuários normais, como por exemplo, o Dashboard que habilita funções exclusivas ao usuário administrador, sendo uma delas a de adicionar produtos.",
+        "carousel.description.dark.theme": "O projeto DarkTheme é uma simples aplicação feita em React que permite o usuário fazer a troca de temas entre Light e Dark.",
+        "carousel.description.deezer.project": "O projeto Deezer é uma simples aplicação que foi feita para estudo e prática ao consumo de API's. Foi utilizado a API do Deezer que está disponível em seu sua documentação.",
+        "carousel.description.redux.typescript": "Está é uma simples aplicação que foi feita para estudo na utilização do Redux com o Typescript.",
+        "carousel.description.mocks.stubs": "Está é uma aplicação feita para estudo em Node com Typescript com o objetivo de aprender a utilizar os conceitos de testes e POO (S.O.L.I.D, TDD, Mock's e Stub's).",
+        "carousel.description.champion.search": "Está é uma aplicação feita em React, no qual, o usuário pode favoritar, filtrar pela classe e também buscar pelo nome do campeão do jogo League of Legends.",
+        "carousel.description.champion.search.mobile": "Está é uma aplicação feita em React Native, no qual, o usuário pode favoritar, filtrar pela classe e também buscar pelo nome do campeão do jogo League of Legends.",
+        "carousel.access.repository.link": "Access the repository",
+
+        "qualifications.language.title": "Domínio das linguagens de programação e tempo de experiência",
+        "qualifications.orm.title": "Domínio de ORMS",
+        "qualifications.concept.title": "Estudo e prática de padrões, conceitos de projetos",
+        "qualifications.experiencie.time.one.year.description": "1 Year of experience",
+        "qualifications.experiencie.time.two.year.description": "2 Years of experience",
+        "qualifications.experiencie.time.three.year.description": "3 Years of experience",
+        "qualifications.experiencie.time.four.year.description": "4 Years of experience",
+        "qualifications.experiencie.time.five.year.description": "5 Years of experience",
+        "qualifications.experiencie.time.six.year.description": "More of 5 Years of experience",
+        
+        "name.label": "Name",
+        "email.label": "E-mail",
+        "subject.label": "Subject",
+        "message.label": "Message",
+        "send.message.button": "Send message",
+        
+        "error.message.field.required": "This field is required!"
+    }
+}
