@@ -31,38 +31,41 @@ function SideMenu({ menuItems }: ISideMenuProps) {
         setSectionsElement(document.querySelectorAll("section"));
     }, []);
 
-    const changeObserver = useCallback((threshold = 0.6) => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        if (sectionsElements) {
-                            setData((state) =>
-                                state.map((item, i) =>
-                                    Array.from(sectionsElements).indexOf(
-                                        entry.target
-                                    ) === i
-                                        ? { ...state[i], isActive: true }
-                                        : { ...item, isActive: false }
-                                )
-                            );
+    const changeObserver = useCallback(
+        (threshold = 0.6) => {
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            if (sectionsElements) {
+                                setData((state) =>
+                                    state.map((item, i) =>
+                                        Array.from(sectionsElements).indexOf(
+                                            entry.target
+                                        ) === i
+                                            ? { ...state[i], isActive: true }
+                                            : { ...item, isActive: false }
+                                    )
+                                );
+                            }
                         }
-                    }
-                });
-            },
-            {
-                root: null,
-                rootMargin: "0px",
-                threshold,
-            }
-        );
+                    });
+                },
+                {
+                    root: null,
+                    rootMargin: "0px",
+                    threshold,
+                }
+            );
 
-        if (sectionsElements) {
-            sectionsElements.forEach((element) => {
-                observer.observe(element);
-            });
-        }
-    }, []);
+            if (sectionsElements) {
+                sectionsElements.forEach((element) => {
+                    observer.observe(element);
+                });
+            }
+        },
+        [sectionsElements]
+    );
 
     useEffect(() => {
         changeObserver();
