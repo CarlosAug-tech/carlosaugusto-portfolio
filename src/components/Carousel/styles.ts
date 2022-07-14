@@ -80,11 +80,10 @@ export const CardCarousel = styled.div`
     }
 
     > p {
-        //flex: 1;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 5; /* number of lines to show */
+        -webkit-line-clamp: 5;
         line-clamp: 5;
         -webkit-box-orient: vertical;
     }

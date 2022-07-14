@@ -31,7 +31,7 @@ function SideMenu({ menuItems }: ISideMenuProps) {
         setSectionsElement(document.querySelectorAll("section"));
     }, []);
 
-    useEffect(() => {
+    const changeObserver = useCallback((threshold = 0.6) => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -53,7 +53,7 @@ function SideMenu({ menuItems }: ISideMenuProps) {
             {
                 root: null,
                 rootMargin: "0px",
-                threshold: 0.6,
+                threshold,
             }
         );
 
@@ -62,16 +62,28 @@ function SideMenu({ menuItems }: ISideMenuProps) {
                 observer.observe(element);
             });
         }
+    }, []);
+
+    useEffect(() => {
+        changeObserver();
     }, [sectionsElements]);
+
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            if (window.innerWidth <= 500) {
+                changeObserver(0.1);
+            } else {
+                changeObserver();
+            }
+        });
+
+        return () => window.removeEventListener("resize", () => {});
+    }, []);
 
     return (
         <Container>
             {data.map((item) => (
-                <SideMenuButton
-                    key={item.hrefId}
-                    isActive={item.isActive}
-                    href={`#${item.hrefId}`}
-                >
+                <SideMenuButton key={item.hrefId} isActive={item.isActive}>
                     <FaCircle />
                 </SideMenuButton>
             ))}

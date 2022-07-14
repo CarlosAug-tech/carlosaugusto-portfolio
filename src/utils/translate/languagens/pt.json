@@ -46,7 +46,10 @@
         "subject.label": "Assunto",
         "message.label": "Mensagem",
         "send.message.button": "Enviar messagem",
+
+        "success.message.send.message": "Messagem enviada com sucesso!",
         
-        "error.message.field.required": "Este campo é obrigatório!"
+        "error.message.field.required": "Este campo é obrigatório!",
+        "error.message.send.message": "Oops, houve algum erro, porfavor aguarde um momento!"
     }
 }

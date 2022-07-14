@@ -16,7 +16,7 @@ export const Container = styled.div`
     transform: translateY(-50%);
 `;
 
-export const SideMenuButton = styled.a<ISideMenuButtonProps>`
+export const SideMenuButton = styled.div<ISideMenuButtonProps>`
     border: 0;
     position: relative;
     background: none;

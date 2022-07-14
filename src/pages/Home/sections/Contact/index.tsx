@@ -29,6 +29,8 @@ function SectionContact() {
     const messageLabel = t("message.label");
     const sendMessageButton = t("send.message.button");
     const errorMessageFieldRequired = t("error.message.field.required");
+    const successMessageSendMessage = t("success.message.send.message");
+    const errorMessageSendMessage = t("error.message.send.message");
 
     const { addToast } = useToast();
     const formRef = useRef<FormHandles>(null);
@@ -83,14 +85,14 @@ function SectionContact() {
 
                 addToast({
                     type: "success",
-                    title: "Messagem enviada com sucesso!",
+                    title: successMessageSendMessage,
                 });
 
                 formRef.current?.reset();
             } catch (err) {
                 addToast({
                     type: "error",
-                    title: "Oops, houve algum erro, porfavor aguarde um momento!",
+                    title: errorMessageSendMessage,
                 });
             }
         },

@@ -47,6 +47,9 @@
         "message.label": "Message",
         "send.message.button": "Send message",
         
-        "error.message.field.required": "This field is required!"
+        "success.message.send.message": "Send message with success!",
+
+        "error.message.field.required": "This field is required!",
+        "error.message.send.message": "Oops, houve algum erro, porfavor aguarde um momento!"
     }
 }

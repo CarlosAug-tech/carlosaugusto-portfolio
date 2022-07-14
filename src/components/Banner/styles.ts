@@ -5,7 +5,7 @@ import BannerImage from "../../assets/images/banner_portfolio-10.png";
 export const BannerContainer = styled.section`
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background: url("${BannerImage}") no-repeat;
     background-size: cover;
@@ -79,7 +79,7 @@ export const BannerPerfil = styled.div`
     transform: rotate(4deg);
 
     @media (max-width: 500px) {
-        height: 300px;
+        height: 400px;
     }
 `;
 

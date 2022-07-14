@@ -1,14 +1,6 @@
-import i18next from "i18next";
-import React, { useEffect } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import {
-    FaArrowDown,
-    FaChevronDown,
-    FaChevronRight,
-    FaEnvelope,
-    FaGithub,
-    FaLinkedin,
-} from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import PerfilImage from "../../assets/images/perfil_image.jpg";
 
@@ -17,7 +9,6 @@ import {
     BannerContent,
     BannerDescription,
     BannerPerfil,
-    ButtonLink,
     ImagePerfil,
     SelfPerfil,
     SocialMedia,
@@ -85,9 +76,6 @@ function Banner({ id }: IBannerProps) {
                     </SocialsPerfil>
                 </BannerPerfil>
             </BannerContent>
-            <ButtonLink href="#About">
-                <FaArrowDown />
-            </ButtonLink>
         </BannerContainer>
     );
 }

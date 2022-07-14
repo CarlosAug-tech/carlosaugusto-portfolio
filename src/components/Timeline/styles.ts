@@ -35,6 +35,9 @@ export const PointLine = styled.div`
         position: absolute;
         visibility: hidden;
         opacity: 0;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: "Courgette", cursive;
         transition: all 0.4s ease;
     }
 

@@ -80,6 +80,10 @@ export const Container = styled.div`
                     height: 100px;
                 }
             }
+
+            &:nth-child(3) {
+                padding: 40px 5px;
+            }
         }
     }
 `;
