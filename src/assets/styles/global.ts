@@ -16,7 +16,7 @@ export default createGlobalStyle`
         width: 100vw;
         height: 100vh;
         min-height: 100vh;
-        scroll-behavior: smooth;
+        /* scroll-behavior: smooth; */
     } 
 
     body {
