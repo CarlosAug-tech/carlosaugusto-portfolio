@@ -109,6 +109,7 @@ function SectionContact() {
             }
         >
             <h3>{contactTitle}</h3>
+            <h3>{process.env.REACT_APP_EMAILJS_SERVICE_ID}</h3>
             <ContactContainer>
                 <Form ref={formRef} onSubmit={handleSubmit}>
                     <Input
