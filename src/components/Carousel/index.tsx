@@ -41,6 +41,7 @@ function Carousel({ carouselData, breakPoints }: ICarouselProps) {
     const [amountPoints, setAmountPoints] = useState(0);
     const [amountPointsArray, setAmountPointsArray] = useState<number[]>([]);
     const [currentCarousel, setCurrentCarousel] = useState(0);
+    const [touchPosition, setTouchPosition] = useState<number | null>(null);
 
     const loadCarouselBreakPoints = useCallback(() => {
         for (let i = 0; i < breakPoints.length; i++) {
@@ -98,6 +99,46 @@ function Carousel({ carouselData, breakPoints }: ICarouselProps) {
         setCurrentCarousel(index);
     }, []);
 
+    const handleTouchStartCarousel = useCallback(
+        (e: React.TouchEvent<HTMLDivElement>) => {
+            const touchDown = e.touches[0].clientX;
+            setTouchPosition(touchDown);
+        },
+        []
+    );
+
+    const handleTouchCarouselNext = useCallback(
+        (e: React.TouchEvent<HTMLDivElement>) => {
+            const touchDown = touchPosition;
+
+            if (touchDown === null) {
+                return;
+            }
+
+            const currentTouch = e.touches[0].clientX;
+            const diff = touchDown - currentTouch;
+
+            if (diff > 5) {
+                if (currentCarousel === amountPointsArray.length - 1) {
+                    return;
+                }
+
+                setCurrentCarousel(currentCarousel + 1);
+            }
+
+            if (diff < -5) {
+                if (currentCarousel === 0) {
+                    return;
+                }
+
+                setCurrentCarousel(currentCarousel - 1);
+            }
+
+            setTouchPosition(null);
+        },
+        [touchPosition]
+    );
+
     useEffect(() => {
         if (currentCarousel > data.length - 1) {
             setCurrentCarousel(0);
@@ -106,7 +147,15 @@ function Carousel({ carouselData, breakPoints }: ICarouselProps) {
 
     return (
         <Container>
-            <Content ref={contentRef}>
+            <Content
+                ref={contentRef}
+                onTouchMove={(e: React.TouchEvent<HTMLDivElement>) => {
+                    handleTouchCarouselNext(e);
+                }}
+                onTouchStart={(e: React.TouchEvent<HTMLDivElement>) => {
+                    handleTouchStartCarousel(e);
+                }}
+            >
                 {data.length > 0 &&
                     data.map((item, index) => (
                         <CardCarouselContainer

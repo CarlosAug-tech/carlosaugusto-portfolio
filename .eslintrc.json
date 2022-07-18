@@ -38,6 +38,7 @@
         "react/jsx-props-no-spreading": "off",
         "no-param-reassign": "off",
         "react/jsx-no-constructed-context-values": "off",
-        "react/no-array-index-key": "off"
+        "react/no-array-index-key": "off",
+        "no-return-assign": "off"
     }
 }
