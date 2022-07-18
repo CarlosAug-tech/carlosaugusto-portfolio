@@ -9,7 +9,6 @@ env:
     REACT_APP_EMAILJS_SERVICE_ID: ${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}
     REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}
     REACT_APP_EMAILJS_USER_ID: ${{ secrets.REACT_APP_EMAILJS_USER_ID }}
-    
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -22,8 +21,7 @@ jobs:
         run: |
           npm install
           npm run build
-          echo "Hello World"
-          echo "This is a secret value: $REACT_APP_EMAILJS_SERVICE_ID"
+          echo "The API key is:${{env.API_KEY}}"   
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
