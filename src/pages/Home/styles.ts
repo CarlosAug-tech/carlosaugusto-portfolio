@@ -52,6 +52,7 @@ export const Container = styled.div`
                 padding-top: 180px;
 
                 > h3 {
+                    margin-bottom: 40px;
                     color: #fff;
                 }
             }
