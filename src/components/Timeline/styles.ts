@@ -231,18 +231,6 @@ export const BoxInformation = styled.div`
         width: 200px;
         top: -42px;
         right: -200px !important;
-
-        > p {
-            font-size: 10px;
-            width: 100%;
-            margin: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 2; /* number of lines to show */
-            line-clamp: 2;
-            -webkit-box-orient: vertical;
-        }
     }
 `;
 
