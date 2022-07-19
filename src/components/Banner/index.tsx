@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
-import PerfilImage from "../../assets/images/perfil_image.jpg";
+import PerfilImage from "../../assets/images/perfil_image_1.jpg";
 
 import {
     BannerContainer,
@@ -39,7 +39,10 @@ function Banner({ id }: IBannerProps) {
                     </p>
                 </BannerDescription>
                 <BannerPerfil>
-                    <ImagePerfil alt="Carlos Augusto - Perfil" />
+                    <ImagePerfil
+                        src={PerfilImage}
+                        alt="Carlos Augusto - Perfil"
+                    />
                     <SocialsPerfil>
                         <SelfPerfil>
                             <h4>Carlos Augusto</h4>
