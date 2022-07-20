@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/carlosaugusto-portfolio/static/js/main.b0d5c296.js",
+    "main.js": "/carlosaugusto-portfolio/static/js/main.e1da972d.js",
     "static/media/banner_portfolio-10.png": "/carlosaugusto-portfolio/static/media/banner_portfolio-10.86133595c305dc79d448.png",
     "static/media/perfil_image_1.jpg": "/carlosaugusto-portfolio/static/media/perfil_image_1.53f5c7b0b9689f3383af.jpg",
     "static/media/polygon_background_04.png": "/carlosaugusto-portfolio/static/media/polygon_background_04.648a1fa67f0ac92432cf.png",
@@ -10,9 +10,9 @@
     "static/media/flag_brazil.png": "/carlosaugusto-portfolio/static/media/flag_brazil.af5248ff654692fa86bb.png",
     "static/media/flag_english.png": "/carlosaugusto-portfolio/static/media/flag_english.7ee9e478cc7e56866342.png",
     "index.html": "/carlosaugusto-portfolio/index.html",
-    "main.b0d5c296.js.map": "/carlosaugusto-portfolio/static/js/main.b0d5c296.js.map"
+    "main.e1da972d.js.map": "/carlosaugusto-portfolio/static/js/main.e1da972d.js.map"
   },
   "entrypoints": [
-    "static/js/main.b0d5c296.js"
+    "static/js/main.e1da972d.js"
   ]
 }
