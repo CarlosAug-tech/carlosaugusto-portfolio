@@ -72,8 +72,8 @@ function Home() {
                 {
                     id: v4(),
                     name: "React Native",
-                    description: qualificationsTwoYearExperiencieTimeDesc,
-                    amountXP: 2,
+                    description: qualificationsOneYearExperiencieTimeDesc,
+                    amountXP: 1,
                 },
             ],
         },
